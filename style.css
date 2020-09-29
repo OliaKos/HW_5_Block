@@ -152,6 +152,8 @@
     padding-left: 31px;
     font-size: 14px;
     font-weight: 400;
+    appearance: none;
+    background: url(img/chevron_down_icon_152668.png) 96% 50% no-repeat;
 }
 
 .button-submit {
