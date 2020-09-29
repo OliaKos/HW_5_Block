@@ -6,15 +6,16 @@
     width: 100%;
     height: auto;
 }
-/* Firstblock */
-.firstblock {
+
+/* Header-block */
+.header-block {
     position: absolute;
-    width: 1440px;
     height: 500px;
     left: 0px;
     top: 0px;
     background: #ED4C5C;
 }
+
 .photo {
     position: absolute;
     width: 533px;
@@ -22,112 +23,109 @@
     left: 691px;
     top: 94px;
 }
-.h1main {
+
+.header-block-main {
     height: 107px;
     width: 445px;
     margin-left: 165px;
     margin-top: 122px;
     border-radius: nullpx;
-}
-.maintext {
     font-weight:400;
     font-size: 36px;
     line-height: 43px;
     color: #ffffff;
 }
-.h5description {
+
+.header-block-textdescription {
     height: 64px;
     width: 445px;
     margin-left: 165px;
     margin-top: 25px;
     border-radius: nullpx;
-}
-.textdescription{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
-    text-align: justified;
     color: #ffffff;
 }
-.iconsblock{
+
+.header-block-icon {
     height: 32px;
     width: 134px;
     margin-left: 163px;
     margin-top: 40px;
     border-radius: 0px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
 }
+
 #googleplaystore{
     margin-right: 20px;
 }
+
 #appstore {
     margin-right: 20px;
 }
-/* Second Block */
-.secondblock {
+
+/* Main Block */
+.mainblock {
     height: 500px;
-    width: 1440px;
     margin-top: 500px;
 }
-.H1second {
+.main-block-title {
     height: 107px;
     width: 445px;
     margin-left: 176px;
     margin-top: 617px;
     border-radius: nullpx;
-
-}
-.contact {
     font-size: 36px;
     color: #000000;
 }
-.seconddescription{
-height: 64px;
-width: 434px;
-padding-left: 176px;
 
-}
-.textseconddescription{
+.main-block-description{
+    height: 64px;
+    width: 434px;
+    padding-left: 176px;
     font-size: 14px;
     line-height: 20px;
 }
-.loginforma{
+.login-forma{
     height: 305px;
     width: 540px;
     margin-left: 735px;
     margin-bottom: 67px;
     border-radius: 6px;
 }
-.first-name {
+.login-names {
     position: absolute;
     height: 60px;
-    width: 255px;
+    width: 540px;
+    top: 617px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    display:flex;
+    flex-direction: row;
+}
+.login-first-name {
     left: 735px;
-    top: 617px;
     border-radius: 6px;
-    border: 1px solid #333333;
-    box-sizing: border-box;
-    padding-left: 31px;
-    font-size: 14px;
-    font-weight: 400;
+    border:1px solid #000000 ;
+    padding-left:30px;
+    margin-right: 20px;
 }
-.last-name {
-    position: absolute;
-    height: 60px;
-    width: 255px;
+.login-last-name {
     left: 1020px;
-    top: 617px;
     border-radius: 6px;
-    border: 1px solid #333333;
-    box-sizing: border-box;
-    padding-left: 31px;
-    font-size: 14px;
-    font-weight: 400;
+    border:1px solid #000000 ;
+    padding-left:30px;
+
 }
-.phone {
+
+.login-phone {
     position: absolute;
     width: 540px;
     height: 60px;
@@ -139,8 +137,9 @@ padding-left: 176px;
     padding-left: 31px;
     font-size: 14px;
     font-weight: 400;
-    }
-.select-sevice{
+}
+
+.login-select-sevice {
     position: absolute;
     width: 540px;
     height: 60px;
@@ -154,7 +153,8 @@ padding-left: 176px;
     font-size: 14px;
     font-weight: 400;
 }
-.submit {
+
+.button-submit {
 position: absolute;
 width: 160px;
 height: 50px;
@@ -166,17 +166,18 @@ box-sizing: border-box;
 border-radius: 6px;
 color: #ffffff;
 font-size: 14px;
+text-transform: uppercase;
 }
-/* Third Block */
-.thirdblock {
+
+/*Footer Block */
+.footer-block {
     position: absolute;
-    width: 1440px;
     height: 435px;
-    left: 0px;
     top: 1045px;
     background: #FAFAFA;
 }
-.addresstitle {
+
+.footer-address-title {
     height: 22px;
     width: 65px;
     padding-left: 166px;
@@ -185,7 +186,8 @@ font-size: 14px;
     font-weight: 700;
     font-size: 18px;
 }
-.addresstext {
+
+.footer-address-text {
     height: 54px;
     width: 254px;
     padding-left: 166px;
@@ -195,14 +197,16 @@ font-size: 14px;
     font-size: 12px;
     line-height: 18px;
 }
-.services {
+
+.footer-services {
     position: absolute;
     width: 254px;
     height: 164px;
     padding-left: 450px;
     top: 85px;
 }
-.servicestitle {
+
+.footer-services-title {
     height: 22px;
     width: 67px;
     border-radius: nullpx;
@@ -210,7 +214,8 @@ font-size: 14px;
     font-size: 18px;
     line-height: 22px;
 }
-.servicetext{
+
+.footer-services-text{
     height: 114px;
     width: 254px;
     padding-top :28px;
@@ -219,59 +224,69 @@ font-size: 14px;
     font-size: 12px;
     line-height: 19px;
 }
-.getintouch {
+
+.footer-getintouch {
     position: absolute;
     width: 122px;
     height: 128px;
     left: 734px;
     top: 85px;
 }
-.gettitle{
+
+.footer-getintouch-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
 }
-.getcontact {
+
+.footer-getintouch-contact {
     font-weight: 400;
     font-size: 12px;
     line-height: 17px;
     padding-top: 33px;
 }
+
 #facebook{
     position: absolute;
     width: 14px;
     padding-top:20px;
 }
+
 #linkedin {
     height: 14px;
     width: 14px;
     padding-left: 26px;
     padding-top: 20px;
 }
-#twitter{
+
+#twitter {
     position: absolute;
     height: 14px;
     width: 14px;
     padding-left: 52px;
     margin-top: -12px;
 }
-.support {
+
+.footer-support {
     position: absolute;
     width: 96px;
     height: 22px;
     left: 1022px;
     top: 85px;
 }
-.supporttitle {
+
+.footer-support-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
 }
-.secur {
+
+.footer-secur {
     height: 31px;
     width: 216px;
     padding-top:33px;
 }
+
 .copyright{
     position: absolute;
     height: 14px;
