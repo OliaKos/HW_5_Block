@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding:0;
-   
     font-family: 'Lato', sans-serif;
     width: 100%;
     height: auto;
@@ -9,147 +8,134 @@
 
 /* Header-block */
 .header-block {
-    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 500px;
-    left: 0px;
-    top: 0px;
     background: #ED4C5C;
 }
-
-.photo {
-    position: absolute;
-    width: 533px;
-    height: 311px;
-    left: 691px;
-    top: 94px;
+.header-block-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+    justify-content: space-around;
+    margin-right: 80px;
+    font-style: normal;
+    color: #FFFFFF;
+    width: 445px;
 }
 
 .header-block-main {
-    height: 107px;
-    width: 445px;
-    margin-left: 165px;
-    margin-top: 122px;
-    border-radius: nullpx;
-    font-weight:400;
+    display: flex;
     font-size: 36px;
+    font-weight: 600;
     line-height: 43px;
-    color: #ffffff;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 50px;
 }
 
-.header-block-textdescription {
-    height: 64px;
-    width: 445px;
-    margin-left: 165px;
-    margin-top: 25px;
-    border-radius: nullpx;
+.header-block-textdescription{
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
-    color: #ffffff;
+    text-align: justified;
+    padding-bottom: 40px;
+   
 }
 
 .header-block-icon {
-    height: 32px;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
     width: 134px;
-    margin-left: 163px;
-    margin-top: 40px;
-    border-radius: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
+    height: 32px;
+}
+#googleplaystore {
+    padding-right: 30px;
 }
 
-#googleplaystore{
-    margin-right: 20px;
+.photo {
+    width: 533px;
+    height: 311px;
+    
 }
 
-#appstore {
-    margin-right: 20px;
-}
 
 /* Main Block */
-.mainblock {
+.main-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     height: 500px;
-    margin-top: 500px;
 }
-.main-block-title {
-    height: 107px;
-    width: 445px;
-    margin-left: 176px;
-    margin-top: 617px;
-    border-radius: nullpx;
-    font-size: 36px;
+.main-block-left {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 435px;
+    height: 160px;
+    margin-right: 114px;
     color: #000000;
 }
 
+.main-block-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
 .main-block-description{
-    height: 64px;
-    width: 434px;
-    padding-left: 176px;
     font-size: 14px;
     line-height: 20px;
-}
-.login-forma{
-    height: 305px;
+} 
+
+.login-forma { 
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
     width: 540px;
-    margin-left: 735px;
-    margin-bottom: 67px;
-    border-radius: 6px;
 }
+
 .login-names {
-    position: absolute;
-    height: 60px;
-    width: 540px;
-    top: 617px;
-    box-sizing: border-box;
-    font-size: 14px;
-    font-weight: 400;
     display:flex;
     flex-direction: row;
+    height: 60px;
+    margin-bottom:25px;
 }
-.login-first-name {
-    left: 735px;
-    border-radius: 6px;
-    border:1px solid #000000 ;
-    padding-left:30px;
-    margin-right: 20px;
-}
-.login-last-name {
-    left: 1020px;
-    border-radius: 6px;
-    border:1px solid #000000 ;
-    padding-left:30px;
 
+.login-first-name {
+   margin-right:30px;
+   padding-left:30px;
+   border-radius: 6px;
+}
+
+.login-last-name {
+    padding-left:30px;
+    border-radius: 6px;
 }
 
 .login-phone {
-    position: absolute;
-    width: 540px;
-    height: 60px;
-    left: 735px;
-    top: 701px;
-    border: 1px solid #333333;
-    box-sizing: border-box;
     border-radius: 6px;
-    padding-left: 31px;
-    font-size: 14px;
-    font-weight: 400;
+    padding-bottom: 20px;
+    padding-left:30px;
+    padding-top: 20px;
+    width: 506px;
+    margin-bottom:25px;
 }
 
 .login-select-sevice {
-    position: absolute;
     width: 540px;
     height: 60px;
-    left: 735px;
-    top: 785px;
     border: 1px solid #333333;
     box-sizing: border-box;
     border-radius: 6px;
     color: rgba(19, 39, 67, 0.5);
     padding-left: 31px;
+    margin-bottom:25px;
     font-size: 14px;
     font-weight: 400;
     appearance: none;
@@ -157,147 +143,135 @@
 }
 
 .button-submit {
-position: absolute;
-width: 160px;
-height: 50px;
-left: 735px;
-top: 872px;
-background: #ED4C5C;
-border: 1.5px solid #ED4C5C;
-box-sizing: border-box;
-border-radius: 6px;
-color: #ffffff;
-font-size: 14px;
-text-transform: uppercase;
+    width: 160px;
+    height: 50px;
+    background: #ED4C5C;    
+    border: 1.5px solid #ED4C5C;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
 }
+
+
 
 /*Footer Block */
 .footer-block {
-    position: absolute;
-    height: 435px;
-    top: 1045px;
+    display:flex;
+    flex-direction:row;
     background: #FAFAFA;
+    height: 445px;
+    align-items:flex-start;
+    padding-top: 85px;
+    justify-content:space-around;
 }
 
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    width: 254px;
+
+
+}
 .footer-address-title {
-    height: 22px;
-    width: 65px;
-    padding-left: 166px;
-    padding-top: 85px;
-    border-radius: nullpx;
+   font-size: 18px;
+    font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    padding-bottom:35px;
 }
 
 .footer-address-text {
-    height: 54px;
-    width: 254px;
-    padding-left: 166px;
-    padding-top: 33px;
-    border-radius: nullpx;
-    font-weight: 400;
     font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
 .footer-services {
-    position: absolute;
+    display:flex;
+    flex-direction: column;
     width: 254px;
-    height: 164px;
-    padding-left: 450px;
-    top: 85px;
+    align-items:flex-start;
+    justify-content: center;
+    font-style: normal;
+   
 }
 
 .footer-services-title {
-    height: 22px;
-    width: 67px;
-    border-radius: nullpx;
-    font-weight: 700;
     font-size: 18px;
+    font-weight: 700;
     line-height: 22px;
+    padding-bottom: 30px;
+
 }
 
 .footer-services-text{
-    height: 114px;
-    width: 254px;
-    padding-top :28px;
-    border-radius: nullpx;
-    font-weight: 400;
     font-size: 12px;
+    font-weight: 400;
     line-height: 19px;
 }
 
 .footer-getintouch {
-    position: absolute;
+    display:flex;
+    flex-direction: column;
     width: 122px;
-    height: 128px;
-    left: 734px;
-    top: 85px;
+    align-items:flex-start;
+    justify-content: center;
+    font-style: normal;
 }
 
 .footer-getintouch-title{
-    font-weight: 700;
     font-size: 18px;
+    font-weight: 700;
     line-height: 22px;
+    padding-bottom: 33px;
 }
 
 .footer-getintouch-contact {
     font-weight: 400;
     font-size: 12px;
     line-height: 17px;
-    padding-top: 33px;
+}
+
+.footer-icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top:25px;
 }
 
 #facebook{
-    position: absolute;
     width: 14px;
-    padding-top:20px;
-}
-
-#linkedin {
-    height: 14px;
-    width: 14px;
-    padding-left: 26px;
-    padding-top: 20px;
-}
-
-#twitter {
-    position: absolute;
-    height: 14px;
-    width: 14px;
-    padding-left: 52px;
-    margin-top: -12px;
+    padding-right: 10px;
 }
 
 .footer-support {
-    position: absolute;
-    width: 96px;
-    height: 22px;
-    left: 1022px;
-    top: 85px;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    width: 216px;
 }
 
 .footer-support-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+    padding-bottom:33px;
 }
 
-.footer-secur {
-    height: 31px;
-    width: 216px;
-    padding-top:33px;
-}
 
 .copyright{
-    position: absolute;
-    height: 14px;
-    width: 155px;
-    left: 161px;
-    top: 1380px;
+    padding-top:141px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #101010,
+    color: #101010;
 }
 
